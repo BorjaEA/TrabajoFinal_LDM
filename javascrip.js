@@ -1,3 +1,4 @@
+alert('Borja Estevez Alaminos, 1DAM y el tema va a ir sobre música')
 function toggleMode() {
     var body = document.getElementsByTagName("body")[0];
     var button = document.getElementsByClassName("button")[0];
