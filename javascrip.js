@@ -1,4 +1,4 @@
-alert('Borja Estevez Alaminos, 1DAM y el tema va a ir sobre música')
+
 function toggleMode() {
     var body = document.getElementsByTagName("body")[0];
     var button = document.getElementsByClassName("button")[0];
@@ -11,6 +11,6 @@ function toggleMode() {
         document.body.style.backgroundColor = "#FFFFFF";
     } else {
         button.innerHTML = '<span class="dark">🌞</span>Cambiar a Modo Día';
-        document.body.style.backgroundColor = "#393646";
+        document.body.style.backgroundColor = "#0b112f";
     }
 }
