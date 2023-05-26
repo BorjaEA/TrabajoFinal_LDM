@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
+<cancion>
+	<titulo>Pastillas de freno</titulo>
+	<autor>Estopa</autor>
+	<letra>
+		<estrofa tipo="normal">
+			<verso>Abro una puerta negra</verso>
+			<verso>Retumban mis oídos</verso>
+			<verso>La calle queda muerta</verso>
+			<verso>El sol aún no ha salido</verso>
+		</estrofa>
+		<estrofa tipo="estribillo">
+			<verso>Saco de mi cartera</verso>
+			<verso>Una tarjeta y ficho</verso>
+			<verso>Y pienso</verso>
+			<verso>Que si se acaba el mundo ahí fuera</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Son 2 minutos tarde</verso>
+			<verso>Vaya día que me espera</verso>
+			<verso>Me pongo un uniforme de esos</verso>
+			<verso>Que no se nota la mierda</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Comienzo a fusionarme</verso>
+			<verso>Con un robot que pega</verso>
+			<verso>Unos chispazos de miedo</verso>
+			<verso>Y si se acaba el mundo ahí fuera</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+		</estrofa>
+		<estrofa tipo="normal">
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+			<verso>Me la pela</verso>
+		</estrofa>
+	</letra>
+</cancion>

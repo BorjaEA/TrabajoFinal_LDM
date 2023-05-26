@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajustes</title>
     <link rel="stylesheet" href="estilos.css">
+
+    <script src="javascrip.js"></script>
 </head>
 
 <body>
@@ -15,24 +17,47 @@
         <nav>
             <ul>
                 <a href="index.html">Inicio</a>
-                <a href="tateti.html">TA-TE-TI</a>
+                <a href="paginaXML.html">Pagina XML</a>
                 <a id="paginaActual" href="Ajustes.html">Ajustes</a>
                 <a href="#demo-modal">Modal</a>
 
-                <button class="button light-mode" onclick="toggleMode()">
-                    <span class="light">🌙 Cambiar a Modo Noche</span>
+                <button id="modoButton" class="button">
+                    <span class="light">🌙</span>
                 </button>
-
 
 
 
             </ul>
         </nav>
     </header>
+    <div id="principal">
 
+        <div class="post">
+            <h2 id="h2ACambiar">Eliga el color para este h2</h2>
+            <div class="centrado">
+                <input type="color" name="colorParaH2" id="id_cambiarColor">
+                <button onclick="  inputColor(), cargarColor()">Guardar</button>
+            </div>
+        </div>
+        <div class="post">
+            <h2 >Introduzca su nombre</h2>
+            <div class="centrado">
+                <input type="text" id="inputUsuario" placeholder="Ingrese su nombre">
+                <button onclick="inputUsuario(), cargarNombre()">Guardar</button>
+            </div>
+        </div>
+        <div class="post">
+            <h2 >Introduzca un tamaño que afectara al tamaño <br> del primer h2 de cada pagina </h2>
+            <div class="centrado">
+                <input type="text" id="inputTamaño" placeholder="Ingrese el tamaño">
+                <button onclick="inputTamaño(), cargarTamaño()">Guardar</button>
+            </div>
+        </div>
+        
+    </div>
 
     <footer>
-        <p>Sin identificar</p>
+        <p id="usuario">Sin identificar</p>
     </footer>
 
 
@@ -47,7 +72,26 @@
             <a href="#" class="modal__close">❌</a>
         </div>
     </div>
-    <script src="javascrip.js"></script>
+
+    <script>
+        var modoButton = document.getElementById("modoButton");
+
+        modoButton.addEventListener("click", toggleMode);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const modo = obtenerDelLocalStorage("modo");
+
+            if (modo === 'noche') {
+
+                toggleMode()
+            }
+
+
+        });
+        cargarNombre();
+        cargarColor();
+        cargarTamaño();
+    </script>
 
 </body>
 

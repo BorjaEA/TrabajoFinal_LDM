@@ -1,0 +1,21 @@
+* {
+  text-align:justify;
+}
+body {
+  counter-reset: section;
+}
+div::before {
+  counter-increment: section;
+  content: "Estrofa " counter(section) ": ";
+}
+h2 {
+  text-decoration:underline;
+}
+p {
+  color: blue;
+  font-weight: 600;
+
+}
+span {
+  background-color: yellow;
+}

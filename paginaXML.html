@@ -18,8 +18,8 @@
     <header>
         <nav>
             <ul>
-                <a id="paginaActual" href="index.html">Inicio</a>
-                <a href="paginaXML.html">Pagina XML</a>
+                <a href="index.html">Inicio</a>
+                <a id="paginaActual" href="paginaXML.html">Pagina XML</a>
                 <a href="Ajustes.html">Ajustes</a>
                 <a href="#demo-modal">Modal</a>
 
@@ -34,19 +34,6 @@
         </nav>
     </header>
 
-    <div id="principal">
-        <div class="post">
-            <h2 id="h2ACambiar">Titulo</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque facilis temporibus animi
-                voluptatem, corporis id tempora consectetur nisi recusandae numquam doloremque porro expedita laboriosam
-                eveniet praesentium magnam repellat. Praesentium.</p>
-        </div>
-        <div class="post">
-            <h2 >Titulo</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque facilis temporibus animi
-                voluptatem, corporis id tempora consectetur nisi recusandae numquam doloremque porro expedita laboriosam
-                eveniet praesentium magnam repellat. Praesentium.</p>
-        </div>
 
     </div>
 
@@ -54,6 +41,13 @@
         <p id="usuario">Sin identificar</p>
     </footer>
 
+    <div id="principal">
+        <div id="post">
+            <h2 id="h2ACambiar"> XML</h2>
+            <iframe src="index.xml" frameborder="1"></iframe>
+        </div>
+
+    </div>
 
     <div id="demo-modal" class="modal">
         <div class="modal__content">
@@ -82,7 +76,6 @@
 
 
         });
-
         cargarNombre();
         cargarColor();
         cargarTamaño();

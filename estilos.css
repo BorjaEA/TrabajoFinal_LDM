@@ -3,11 +3,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
-    transition-duration: 0.4s;
+
 }
 
-#post {
-    border: solid;
+iframe{
+    width: 60vw;
+    height: 80vh;
+    background-color: #ffffff;
 }
 
 ul {
@@ -19,8 +21,9 @@ ul {
 }
 
 header {
-    display: flex;
-    margin: 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,21 +34,21 @@ header {
 }
 
 nav ul {
-    display: inline-flex;
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     list-style-type: none;
 }
 
 
 
 nav ul a {
-    display: flex;
+    display: inline-block;
     background-color: #007bff;
     border: none;
     color: #fff;
-    margin: 10px;
-    padding: 12px 24px;
+    margin: 1px;
+    padding: 12px 6px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -53,42 +56,47 @@ nav ul a {
     cursor: pointer;
     border-radius: 4px;
     justify-content: center;
-    min-width: 120px;
+    min-width: 60px;
 
 }
 
 
 a {
- 
     transition: 0.3s;
-    
-
 }
 
 a:hover {
-    font-size: 1.15em;
+    font-size: 1.10em;
+    transition: 0.3s;
+}
+
+ul button:hover {
+    transition: 0.3s;
+    font-size: 1.10em;
 
 }
 
-.button {
-    display: flex;
+ul .button {
+    display: inline-block;
     background-color: #007bff;
     border: none;
     color: #fff;
-    margin: 10px;
-    padding: 12px 24px;
+    margin: 1px;
+    margin-left: 25px;
+    padding: 12px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-weight: bolder;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 25px;
 }
 
 
-.button span {
-    margin-right: 8px;
+ul .button span {
+    
+    padding: 8px;
 }
 
 footer {
@@ -102,7 +110,17 @@ footer {
     padding: 10px 0;
 }
 
-/* If you like this, be sure to ❤️ it. */
+
+.dark-mode {
+    background-color: #0b112f;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -159,6 +177,14 @@ footer {
     text-decoration: none;
 }
 
+.modal__content h1 {
+    color: #000000 !important;
+}
+
+.modal__content p {
+    color: #000000 !important;
+}
+
 #principal {
     display: inline-flex;
     flex-wrap: wrap;
@@ -167,17 +193,24 @@ footer {
     margin-top: 110px;
 }
 
-#post {
 
+.post {
+    margin: 20px;
     width: 51vw;
-    
+    border-radius: 5px;
 }
 
-#post h2{
-   text-align: center;
+.post h2 {
+    text-align: center;
 }
 
-#paginaActual{
-    
+#paginaActual {
+
     background-color: rgb(255, 166, 0);
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
