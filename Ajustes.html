@@ -18,6 +18,7 @@
             <ul>
                 <a href="index.html">Inicio</a>
                 <a href="paginaXML.html">Pagina XML</a>
+                <a href="pagina2.html">Pagina 2</a>
                 <a id="paginaActual" href="Ajustes.html">Ajustes</a>
                 <a href="#demo-modal">Modal</a>
 
@@ -33,7 +34,7 @@
     <div id="principal">
 
         <div class="post">
-            <h2 id="h2ACambiar">Eliga el color para este h2</h2>
+            <h2 id="h2ACambiar">Eliga el color para el primer h2 de cada pagina</h2>
             <div class="centrado">
                 <input type="color" name="colorParaH2" id="id_cambiarColor">
                 <button onclick="  inputColor(), cargarColor()">Guardar</button>
@@ -61,13 +62,17 @@
     </footer>
 
 
+
     <div id="demo-modal" class="modal">
         <div class="modal__content">
-            <h1>Trabajo de Borja Estevez</h1>
+            <h1>Trabajo de Borja Estevez Alaminos 1DAM</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti optio sint eaque doloremque. Debitis
-                deleniti molestias ducimus natus, tempora dolore nisi! Alias animi mollitia modi, porro unde iure eius
-                quidem.</p>
+            <p>Cada vez que se guarda algo en el localStorage o en el SessionStorage se mostrara un mensaje por consola.<br>
+            La lectura, modificacion y el mostrar un mensaje por consola del contenido se realiza en su mayoria en la pagina de ajustes,
+            tanto los formularios como identificarte tambien se encuentran en la pagina de ajustes y el nombre ingresado se vera en la parte inferior del viewport.<br>
+            A la hora de introducir el tamaño del h2 es necesario especificar la unidad de medida(px/rem/em). <br>
+            Todo los elementos menos el nombre de usuario incluido si esta en modo dia o noche estan guardados con el localStorage, el nombre de usuario a su vez esta en el session storage.
+            </p>
 
             <a href="#" class="modal__close">❌</a>
         </div>

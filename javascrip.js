@@ -47,6 +47,7 @@ function obtenerDeSessionStorage(clave) {
 
 function inputUsuario(){
     var nombreU = document.getElementById("inputUsuario").value;
+    console.log("Nombre: " + nombreU);
     guardarEnSessionStorage("nombre",nombreU);
 
 }

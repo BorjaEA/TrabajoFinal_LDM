@@ -6,7 +6,7 @@
 
 }
 
-iframe{
+iframe {
     width: 60vw;
     height: 80vh;
     background-color: #ffffff;
@@ -27,7 +27,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 97.5%;
+    width: 99.2%;
     color: #fff;
     font-weight: bolder;
     justify-content: center;
@@ -95,7 +95,7 @@ ul .button {
 
 
 ul .button span {
-    
+
     padding: 8px;
 }
 
@@ -162,7 +162,7 @@ footer {
 .modal__content {
     border-radius: 4px;
     position: relative;
-    width: 500px;
+    width: 800px;
     max-width: 90%;
     background: #fff;
     padding: 1em 2em;
@@ -195,12 +195,21 @@ footer {
 
 
 .post {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     width: 51vw;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .post h2 {
+
+    text-align: center;
+}
+.post p{
     text-align: center;
 }
 
@@ -209,8 +218,20 @@ footer {
     background-color: rgb(255, 166, 0);
 }
 
-.centrado{
+.centrado {
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+
+img {
+    display: flex;
+    height: 800px;
+}
+
+#catjam{
+    display: flex;
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 400px;
 }
